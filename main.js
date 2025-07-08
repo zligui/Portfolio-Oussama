@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Close mobile menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         link.addEventListener('click', () => {
             menuToggle.classList.remove('active');
             navLinks.classList.remove('active');
